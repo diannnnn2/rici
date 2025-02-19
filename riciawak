@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menampilkan Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #imageContainer {
+            margin-top: 20px;
+            display: none;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tekan Tombol untuk Menampilkan Gambar</h1>
+    <button onclick="tampilkanGambar()">Tampilkan</button>
+    <div id="imageContainer">
+        <img id="displayImage" src="https://via.placeholder.com/300" alt="Gambar Muncul">
+    </div>
+
+    <script>
+        function tampilkanGambar() {
+            document.getElementById("imageContainer").style.display = "block";
+        }
+    </script>
+</body>
+</html>
